@@ -1,0 +1,64 @@
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff">
+     <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/TFaddress"
+            android:hint="Search Location"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Search"
+        android:textColor="#fff"
+        android:background="@drawable/rectangle"
+        android:onClick="onSearch"
+        android:id="@+id/button5"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/TFaddress"
+        android:layout_alignStart="@+id/map"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"/>
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.himauchiha.maps.MapsActivity"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Save Location"
+        android:onClick="onSave"
+        android:background="@drawable/rectangle"
+        android:id="@+id/button6"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:layout_below="@+id/TFaddress"
+        android:layout_toEndOf="@+id/button5"
+        android:textColor="#fff"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
+

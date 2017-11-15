@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AutoMum</string>
+    <string name="time">Set Time</string>
+    <string name="setday">Set Day</string>
+    <string name="on">Turn on silent mode</string>
+    <string name="off">Turn off silent mode</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_location_activity">Location</string>
+    <string name="title_time_activity">Time</string>
+  </resources>
